@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ziqqyves</title>
+    <link rel="stylesheet" href="../css/style2.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="left">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="project.html">Project</a></li>
+                <li class="title">Ziqqyves</li>
+                <li><a href="testimonial.html">Testimonial</a></li>
+                <li><a href="contact.html" class="right">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="banner">
+        <img src="../image/IMG_20240122_084815_176.jpg" alt="Banner Image">
+        <h1>&nbsp;</h1>
+    </section>
+    <section class="intro">
+      <p>My Project so Far</p>
+    </section>
+    <section class="project-showcase">
+        <div class="slider">
+            <div class="slides">
+                <div class="slide">
+                    <a href="website design.html"><img src="../image/Screenshot 2024-06-04 094142.png" alt="Project Image 1"></a>
+                  <p>Website &amp; Design</p>
+                </div>
+                <div class="slide">
+                    <a href="Galleries.html"><img src="../image/Screenshot 2024-07-10 231522.png" alt="Project Image 3"></a>
+                  <p>Galleries</p>
+                </div>
+            </div>
+            <button class="prev" onclick="prevSlide()">&#10094;</button>
+            <button class="next" onclick="nextSlide()">&#10095;</button>
+        </div>
+    </section>
+    
+    <script>
+        let slideIndex = 0;
+        const slides = document.querySelectorAll('.slide');
+        
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.style.display = (i === index) ? 'block' : 'none';
+            });
+        }
+
+        function prevSlide() {
+            slideIndex = (slideIndex > 0) ? slideIndex - 1 : slides.length - 1;
+            showSlide(slideIndex);
+        }
+
+        function nextSlide() {
+            slideIndex = (slideIndex < slides.length - 1) ? slideIndex + 1 : 0;
+            showSlide(slideIndex);
+        }
+
+        // Initialize the slider
+        showSlide(slideIndex);
+    </script>
+</body>
+</html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ziqqyves</title>
+    <style>
+        body {
+             font-family: "Kaisei Decol", "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", "Helvetica, Arial", "sans-serif";
+            padding-right: 0px;
+            background-color: #2e2e2e;
+            color: white;
+            margin: 0;
+        }
+        nav {
+            background-color: white;
+            padding: 30px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-bottom: 1px solid #ccc;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+        }
+        nav ul li {
+            margin: 0 20px;
+        }
+        nav ul li a {
+            color: black;
+            text-decoration: none;
+            font-size: 1.7em;
+			margin: 40px;
+        }
+        nav .logo {
+            margin: 0 100px;
+            font-size: 3.0em;
+            font-weight: bold;
+            color: #000000;
+			margin-left: 100px;
+        }
+        header {
+            position: relative;
+            text-align: center;
+            color: white;
+            height: 100vh; /* Full page height */
+            overflow: hidden;
+        }
+        header img {
+            width: 100%;
+            height: 70%;
+            object-fit: cover; /* Ensures the image covers the entire header */
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+		.left {
+			margin-left: -10px;
+		}
+        header h1 {
+            position: relative;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            margin: 0;
+            padding: 10px;
+            margin-top: 90px;
+            border-radius: 5px; /* Optional: rounded corners */
+        }
+		
+        .content {
+            text-align: center;
+            padding: 0px 30px;
+			margin-top: -120px;
+        }
+        .content h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+			margin-top: 20px;
+        }
+        .content p {
+            font-style: italic;
+            margin-bottom: 40px;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 20px;
+            padding: 0 20px;
+        }
+        .gallery img {
+            width: 80%;
+            height: auto;
+        }
+        .gallery .img1 {
+            grid-column: 1 / 2;
+            grid-row: 1 / 2;
+            width: 70%;
+            height: 80%;
+            margin-left: 20px;
+            margin-top: 40px;
+        }
+        .gallery .img2 {
+            grid-column: 2 / 3;
+            grid-row: 1 / 2;
+            width: 115%;
+            height: 80%;
+            margin-left: -110px; /* Adjust this value to move img2 left */
+            margin-top: 40px;
+        }
+        .gallery .img3 {
+            grid-column: 1 / 2;
+            grid-row: 2 / 3;
+            transform: rotate(-90deg);
+            height: 100%;
+            width: 90%;
+            margin-left: 80px;
+            margin-top: -75px; 
+            margin-bottom: -30px;
+        }
+        .gallery .img4 {
+            grid-column: 2 / 3;
+            grid-row: 2 / 3;
+            margin-left: 130px;
+            padding-top: -30px;
+            height: 80%;
+            width: 80%;
+		.
+        }
+		.seemore {
+			font-size: 35px;
+				margin-top: -30px;
+		}
+		.seemore1{
+			font-size: 20px;
+			margin-bottom: 10px;
+			color: #FFFFFF
+		}
+        footer {
+            text-align: center;
+            padding: 50px;
+            background-color: #2E2E2E;
+            color: white;
+			margin-top: -20px;
+			
+        }
+		
+        @media (max-width: 768px) {
+            nav ul li {
+                margin: 0 10px;
+            }
+            .content {
+                padding: 20px 10px;
+            }
+            .gallery {
+                grid-template-columns: 1fr;
+                grid-template-rows: auto;
+            }
+            .gallery .img1, .gallery .img2, .gallery .img3, .gallery .img4 {
+                grid-column: 1 / 2;
+                grid-row: auto;
+            }
+            .gallery .img3 {
+                transform: rotate(0deg); /* Remove rotation on smaller screens */
+            }
+        }
+    .left {
+}
+    .seemore {
+}
+    .seemore1 {
+}
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="home.html" class="left">Home</a></li>
+            <li><a href="about.html" class="left">About</a></li>
+            <li><a href="project.html" class="left">Project</a></li>
+            <li class="logo">Ziqqyves</li>
+            <li><a href="testimonial.html">Testimonial</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <header>
+        <img src="../image/20220421074326_IMG_0481.JPG" alt="Nature Photography by Haziq">
+    </header>
+    <main class="content">
+		<h3>Hi I'm Haziq, a Designer, Animator, and a Nature Photographer</h3>
+        <h1>"I don't trust words. I trust pictures."</h1>
+        <h2>- Gilles Peress</h2>
+        <section class="gallery">
+            <img src="../image/20220505235911_IMG_8375.JPG" alt="Beautiful Landscape 1" class="img1">
+            <img src="../image/20230831_194144.jpg" alt="Beautiful Landscape 2" class="img2">
+            <img src="../image/20231005_152131.jpg" alt="Beautiful Landscape 3" class="img3">
+            <img src="../image/20230724_193528.jpg" alt="Beautiful Landscape 4" class="img4">
+			
+        </section>
+		<section id="see more">
+			<p class="seemore">Galleries</p>
+		<a href="Galleries.html" class="seemore1">See More Galleries</a>
+		
+		</section>
+    </main>
+    <footer>
+        <h2>Let’s set out the world and see the beauty of nature</h2>
+    </footer>
+</body>
+</html>
